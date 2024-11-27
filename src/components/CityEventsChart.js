@@ -5,7 +5,7 @@ import {
   Scatter,
   XAxis, YAxis,
   ZAxis,
-  Legend,
+  Legend, 
   CartesianGrid,
   Tooltip,
   ResponsiveContainer
