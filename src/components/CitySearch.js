@@ -10,8 +10,8 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
     setQuery(value);
     setShowSuggestions(false);
     setCurrentCity(value);
-    setInfoAlert('');
-  }; 
+    setInfoAlert('');   
+  };  
 
   const handleInputChanged = (event) => {
     const value = event.target.value;

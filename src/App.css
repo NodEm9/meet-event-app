@@ -75,7 +75,7 @@
 #city-search,
 #numberOfevents {
   text-align: left;
-  width: 550px;
+  width: 100%;  
   display: block;
   margin: auto;
 }
@@ -210,15 +210,6 @@ img {
     max-width: 2024px;
   }
 
-  .App h1,
-  p,
-  #city-search,
-  #numberOfevents,
-  img,
-  #event-list {
-    padding: 1rem;
-  }
-
   .App:first-child {
     font-size: 28px;
     font-weight: 600;
@@ -232,6 +223,14 @@ img {
     justify-content: center;
     padding: 4rem 3rem;
     margin-bottom: 0.8rem;
+  }
+
+  #city-search,
+  #numberOfevents {
+    text-align: left;
+    width: 550px;
+    display: block;
+    margin: auto;
   }
 
   .events-filter-forms {
@@ -264,6 +263,7 @@ img {
   #numberOfevents {
     margin: auto;
     line-height: 1.1;
+    padding: 0 2rem;
   }
 
   #city-label,
@@ -348,7 +348,6 @@ img {
   #city-search,
   #event-list {
     padding: 10px 5px;
-    width: 100%;
   }
 
   .header {
@@ -360,6 +359,12 @@ img {
   h1 {
     font-size: calc(48px + 2vmin);
     margin-top: 2rem;
+  }
+
+  #city-search,
+  #numberOfevents {
+    text-align: left;
+    margin: auto;
   }
 
   .charts-container {
@@ -381,22 +386,25 @@ img {
 
   #number {
     flex-direction: column;
+    left: 0;
     width: 100%;
-    margin: auto;
     font-size: 16px;
-    padding: 0;
+    padding: 0 4rem;
+    margin: 0 auto;
+    margin-left: -1.5rem;
   }
 
-  #numberOfevents {
+ .App #numberOfevents {
     display: flex;
-    width: auto;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
-  .number {
+   #number .number {
     width: 100%;
     padding: 1rem;
-    margin: auto;
+    margin: 0 auto;
   }
 
   #city-search {
@@ -431,8 +439,8 @@ img {
   .suggestions {
     position: absolute;
     z-index: 1;
-    width: 63%;
-    left: 50px;
+    width: 73%;
+    left: 38px;
   }
 
   #event-list {
@@ -456,6 +464,14 @@ img {
     width: fit-content;
     padding: 0.5rem 2.5rem;
     width: 100%;
+  }
+
+  .event:nth-child(odd) {
+    background-color: var(--color-tertiary);
+  }
+
+  .event:hover {
+    transform: scale(1.02);
   }
 
   .eventSummary {

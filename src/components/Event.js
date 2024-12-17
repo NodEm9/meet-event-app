@@ -12,7 +12,7 @@ const Event = ({ event }) => {
         <p className="originalStartTime">
           {event &&
             (new Date(event.originalStartTime.dateTime)).toUTCString()}
-        </p>
+        </p> 
       </span>
       {showDetails ? (
         <div className='details' id="details" >
